@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti — Luca Borghetti</title>
+  <meta name="description" content="Contatta Luca Borghetti per collaborazioni freelance o opportunità junior nel web development." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0f'/><text y='.9em' font-size='60' x='12'>LB</text></svg>" />
+  <meta property="og:title" content="Contatta Luca Borghetti" />
+  <meta property="og:description" content="Hai un progetto o un'opportunità? Parliamone." />
+  <meta property="og:type" content="website" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">luca<span>.</span>dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Apri menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">Curriculum</a></li>
+      <li><a href="contatti.html" class="active">Contatti</a></li>
+      <li><a href="contatti.html" class="btn btn-primary" style="padding:8px 20px;font-size:0.82rem;">Lavoriamo insieme ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <p class="section-label">Contatti</p>
+    <h1 class="section-title">Hai un progetto<br>in mente?</h1>
+    <p class="section-subtitle">
+      Sono disponibile per collaborazioni freelance, posizioni junior e opportunità
+      nel mondo dello sviluppo web. Scrivimi, rispondo entro 24 ore.
+    </p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <p class="contact-info-label">Posizione</p>
+            <p class="contact-info-value">Milano, Italia</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">⏱️</div>
+          <div>
+            <p class="contact-info-label">Disponibilità</p>
+            <p class="contact-info-value">Freelance &amp; Posizioni Junior</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div>
+            <p class="contact-info-label">Tempo di risposta</p>
+            <p class="contact-info-value">Entro 24 ore lavorative</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">⚽</div>
+          <div>
+            <p class="contact-info-label">Collaborazione attiva</p>
+            <p class="contact-info-value">
+              <a href="https://www.11contro11.com" target="_blank" style="color:var(--accent);">11contro11.com</a>
+            </p>
+          </div>
+        </div>
+        <div style="margin-top:40px;">
+          <p class="section-label" style="margin-bottom:20px;">Link utili</p>
+          <div class="social-links" style="flex-direction:column;">
+            <a href="https://www.11contro11.com" class="social-link" target="_blank">⚽ 11contro11 — Articoli sportivi</a>
+            <a href="cv.html" class="social-link">📄 Curriculum Vitae</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="form-card">
+          <h2 style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;margin-bottom:8px;">
+            Inviami un messaggio
+          </h2>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:28px;">
+            Compila il form e ti rispondo al più presto. Nessuno spam, promesso.
+          </p>
+          <form id="contactForm" novalidate autocomplete="off">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">Nome *</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Il tuo nome" required minlength="2" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Cognome *</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Il tuo cognome" required minlength="2" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="tua@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Motivo del contatto *</label>
+              <select id="subject" name="subject" class="form-control" required>
+                <option value="" disabled selected>Seleziona...</option>
+                <option value="lavoro">Opportunità lavorativa junior</option>
+                <option value="freelance">Progetto freelance</option>
+                <option value="collaborazione">Collaborazione editoriale</option>
+                <option value="altro">Altro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Messaggio *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Raccontami del tuo progetto o opportunità..." required minlength="20"></textarea>
+            </div>
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:12px;">
+              <input type="checkbox" id="privacy" name="privacy" required
+                style="margin-top:3px;accent-color:var(--accent);width:16px;height:16px;cursor:pointer;" />
+              <label for="privacy" style="font-size:0.82rem;color:var(--text-muted);cursor:pointer;line-height:1.5;">
+                Accetto il trattamento dei dati personali per essere ricontattato. *
+              </label>
+            </div>
+            <button type="button" id="submitBtn" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+              Invia messaggio →
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Messaggio inviato! Ti rispondo entro 24 ore.
+            </div>
+            <div id="formError" style="display:none;text-align:center;padding:16px;color:#f87171;font-size:0.875rem;margin-top:12px;">
+              ⚠️ Compila tutti i campi obbligatori correttamente.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Luca Borghetti — Tutti i diritti riservati</p>
+      <a href="index.html" class="footer-back">← Torna alla home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const form       = document.getElementById('contactForm');
+  const submitBtn  = document.getElementById('submitBtn');
+  const successMsg = document.getElementById('formSuccess');
+  const errorMsg   = document.getElementById('formError');
+
+  submitBtn.addEventListener('click', function() {
+    successMsg.style.display = 'none';
+    errorMsg.style.display   = 'none';
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      errorMsg.style.display = 'block';
+      return;
+    }
+    submitBtn.textContent = 'Invio in corso...';
+    submitBtn.disabled = true;
+    setTimeout(() => {
+      form.reset();
+      submitBtn.textContent = 'Invia messaggio →';
+      submitBtn.disabled = false;
+      successMsg.style.display = 'block';
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 1200);
+  });
+</script>
+</body>
+</html>

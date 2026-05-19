@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luca Borghetti — Full Stack Developer in formazione</title>
+  <meta name="description" content="Portfolio di Luca Borghetti, sviluppatore web junior in formazione e redattore sportivo presso 11contro11." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0f'/><text y='.9em' font-size='60' x='12'>LB</text></svg>" />
+  <meta property="og:title" content="Luca Borghetti — Full Stack Developer in formazione" />
+  <meta property="og:description" content="Portfolio di Luca Borghetti: sviluppo web, competenze tecniche e redazione sportiva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lucaborghetti.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">luca<span>.</span>dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Apri menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="cv.html">Curriculum</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="contatti.html" class="btn btn-primary" style="padding:8px 20px;font-size:0.82rem;">Lavoriamo insieme ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-up">Disponibile per nuovi progetti</div>
+        <h1 class="hero-name fade-up">
+          Luca<br><span class="text-accent">Borghetti.</span>
+        </h1>
+        <p class="hero-role fade-up">Full Stack Developer in formazione &amp; Redattore Sportivo</p>
+        <p class="hero-bio fade-up">
+          Milanese, classe &apos;97. Sto costruendo le mie competenze nello sviluppo web full stack
+          e nell&apos;integrazione di agenti AI, mentre dal 2021 collaboro con 11contro11 come
+          redattore sportivo. Due mondi diversi, stessa attenzione ai dettagli.
+        </p>
+        <div class="hero-actions fade-up">
+          <a href="contatti.html" class="btn btn-primary">Contattami</a>
+          <a href="cv.html" class="btn btn-outline">Vedi il CV</a>
+        </div>
+      </div>
+      <div class="hero-avatar fade-up">
+        <div class="avatar-ring">
+          <div class="avatar-placeholder">LB</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CHI SONO -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Chi sono</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <h2 class="section-title">Codice e parole,<br>due passioni.</h2>
+      </div>
+      <div>
+        <p style="color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:20px;">
+          Ho iniziato nel mondo del lavoro con esperienze trasversali — call center,
+          inserimento dati, tester per ricerche di mercato — che mi hanno insegnato
+          precisione, attenzione al dettaglio e adattabilità in ambienti diversi.
+        </p>
+        <p style="color:var(--text-secondary);font-size:1rem;line-height:1.9;margin-bottom:20px;">
+          Dal 2021 collaboro con <strong style="color:var(--text-primary);">11contro11</strong>
+          come redattore sportivo: articoli pre e post partita, analisi tattiche e rispetto
+          delle deadline. Un lavoro che mi ha dato disciplina e stile comunicativo.
+        </p>
+        <p style="color:var(--text-secondary);font-size:1rem;line-height:1.9;">
+          Oggi mi sto formando come <strong style="color:var(--text-primary);">Full Stack Developer</strong>
+          con un percorso specializzato in sviluppo web e agenti AI, per unire la capacità
+          comunicativa che ho già con le competenze tecniche che sto costruendo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- SKILLS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Competenze</p>
+    <h2 class="section-title">Cosa so fare</h2>
+    <p class="section-subtitle">Skill tecniche in crescita, affiancate da competenze comunicative costruite sul campo.</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML &amp; CSS</div>
+        <div class="skill-desc">Struttura semantica, Flexbox, Grid, Bootstrap 5, responsive design e animazioni.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-desc">Basi di ES6+, manipolazione del DOM e interattività nelle pagine web.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Scripting, automazioni e integrazione con API esterne.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">AI &amp; Agenti</div>
+        <div class="skill-desc">Prompt engineering e integrazione di agenti AI in applicazioni web.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">✍️</div>
+        <div class="skill-name">Scrittura &amp; Editing</div>
+        <div class="skill-desc">Articoli sportivi, editing, rispetto delle deadline e stile editoriale.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-name">Tool &amp; Workflow</div>
+        <div class="skill-desc">Git, GitHub, VS Code e ambienti di lavoro digitali strutturati.</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Lavori</p>
+    <h2 class="section-title">Progetti &amp; collaborazioni</h2>
+    <p class="section-subtitle">Quello che ho costruito finora, tra sviluppo web e collaborazioni editoriali.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-thumb">🌍</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+          </div>
+          <h3 class="project-title">Portfolio Personale</h3>
+          <p class="project-desc">Questo sito. Sviluppato da zero con dark mode, layout responsive, Flexbox, CSS Grid e form di contatto.</p>
+          <div class="project-links">
+            <span class="project-link">↗ Sei già qui</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">⚽</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Editoria</span><span class="tag">Sport</span><span class="tag">Dal 2021</span>
+          </div>
+          <h3 class="project-title">Redattore — 11contro11</h3>
+          <p class="project-desc">Collaborazione continuativa come redattore sportivo: articoli pre e post partita, analisi tattiche e contenuti calcistici.</p>
+          <div class="project-links">
+            <a href="https://www.11contro11.com" class="project-link" target="_blank">↗ Visita il sito</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">🤖</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">AI</span><span class="tag">In sviluppo</span>
+          </div>
+          <h3 class="project-title">Progetto AI — Prossimamente</h3>
+          <p class="project-desc">Un agente AI per supportare il workflow editoriale. Progetto personale in sviluppo nel corso Full Stack.</p>
+          <div class="project-links">
+            <span class="project-link" style="opacity:.5;">⏳ In arrivo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <p class="section-label">Contatti</p>
+    <h2 class="section-title" style="font-size:2rem;margin-bottom:12px;">Parliamoci</h2>
+    <p style="color:var(--text-secondary);margin-bottom:32px;font-size:0.95rem;">
+      Sono aperto a collaborazioni, posizioni junior e progetti freelance.
+    </p>
+    <div class="social-links">
+      <a href="contatti.html" class="social-link">✉️ Scrivimi un messaggio</a>
+      <a href="https://www.11contro11.com" class="social-link" target="_blank">⚽ 11contro11</a>
+      <a href="cv.html" class="social-link">📄 Vedi il CV</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Luca Borghetti — Tutti i diritti riservati</p>
+      <a href="#" class="footer-back">Torna su ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>
